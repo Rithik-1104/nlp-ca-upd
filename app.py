@@ -15,10 +15,10 @@ st.set_page_config(
 
 # GROQ API Configuration - Read from Streamlit secrets for deployment
 try:
-    GROQ_API_KEY = st.secrets["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"]
+    GROQ_API_KEY = st.secrets["Your_groq_api_key"]
 except:
     # Fallback to hardcoded key for local development
-    GROQ_API_KEY = "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"
+    GROQ_API_KEY = "api_key"
 
 GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
 MODEL_NAME = "llama-3.3-70b-versatile"
